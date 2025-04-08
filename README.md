@@ -2,6 +2,125 @@
 
 > "In 2025, web development remains one of the most in-demand skills globally. From personal blogs to billion-dollar platforms like YouTube, Amazon, and TikTok — they're all websites built by developers who once started exactly where you are now."
 
+## 🛠️ Setting Up Your Development Environment
+
+Before diving into code, you need to set up your development environment. This guide will help you get started with the essential tools for HTML, CSS, and JavaScript development.
+
+### 💻 Code Editors: Where You'll Write Your Code
+
+| Editor | Description | Best For | Download Link |
+|--------|-------------|----------|--------------|
+| **VS Code** | Microsoft's free, powerful editor with excellent extensions | Most developers, beginners to experts | [Download VS Code](https://code.visualstudio.com/download) |
+| **Cursor** | AI-powered code editor based on VS Code | Modern development with AI assistance | [Download Cursor](https://cursor.sh) |
+| **Sublime Text** | Lightweight, fast editor (free to try) | Speed and performance | [Download Sublime](https://www.sublimetext.com/download) |
+| **IntelliJ IDEA** | Professional IDE used by big companies (paid) | Enterprise development | [Download IntelliJ](https://www.jetbrains.com/idea/download/) |
+
+**Recommendation for beginners**: Start with VS Code - it's free, powerful, and has the largest community support.
+
+### 🚀 Running Your Code: Step by Step
+
+#### 📄 HTML Files
+1. **Create an HTML file**:
+   - Open your code editor
+   - Create a new file with `.html` extension (e.g., `index.html`)
+   - Add basic HTML structure (see [HTML Roadmap](./HTML-ROADMAP.md))
+
+2. **Run HTML files**:
+   - **Method 1**: Double-click the HTML file to open in your browser
+   - **Method 2**: Right-click > Open with > Choose your browser
+   - **Method 3**: Drag and drop the HTML file into an open browser window
+   - **Method 4**: Use Live Server extension in VS Code:
+     1. Install "Live Server" extension
+     2. Right-click on your HTML file
+     3. Select "Open with Live Server"
+
+#### 🎨 CSS Files
+1. **Create a CSS file**:
+   - Create a new file with `.css` extension (e.g., `styles.css`)
+   - Write your CSS rules (see [CSS Roadmap](./CSS-ROADMAP.md))
+
+2. **Link CSS to HTML**:
+   ```html
+   <head>
+     <link rel="stylesheet" href="styles.css">
+   </head>
+   ```
+
+3. **Run CSS**:
+   - CSS doesn't run independently - it works when linked to HTML
+   - Open your HTML file using any method above
+   - Changes to CSS will reflect when you refresh the browser
+
+#### 📊 JavaScript Files
+1. **Create a JavaScript file**:
+   - Create a new file with `.js` extension (e.g., `script.js`)
+   - Write your JavaScript code (see [JavaScript Roadmap](./JAVASCRIPT-ROADMAP.md))
+
+2. **Link JavaScript to HTML**:
+   ```html
+   <!-- At the bottom of your body tag -->
+   <body>
+     <!-- Your HTML content -->
+     <script src="script.js"></script>
+   </body>
+   ```
+
+3. **Run JavaScript**:
+   - JavaScript runs when loaded by HTML file
+   - Open your HTML file using any method above
+   - For testing JavaScript directly:
+     1. Open browser developer tools (F12 or Right-click > Inspect)
+     2. Go to "Console" tab
+     3. Type JavaScript code directly to see results
+
+### 📱 Testing on Different Devices
+1. **Responsive Design Testing**:
+   - Use browser developer tools (F12) > Toggle device toolbar
+   - Test on various device dimensions
+
+2. **Local Network Testing**:
+   - With VS Code Live Server, your site is accessible on your local network
+   - Find your computer's IP address
+   - Other devices on same network can visit http://your-ip-address:5500
+
+### 📂 Managing Your Project Files
+- Keep files organized in folders (e.g., `/css`, `/js`, `/images`)
+- Use meaningful filenames (`main.css` instead of `file1.css`)
+- Start with `index.html` as your main file (opens by default)
+
+### 🔄 Full HTML/CSS/JS Workflow Example
+1. Create project folder
+2. Create basic files:
+   ```
+   my-project/
+   ├── index.html
+   ├── css/
+   │   └── styles.css
+   └── js/
+       └── script.js
+   ```
+3. Link them together in `index.html`:
+   ```html
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Project</title>
+     <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body>
+     <h1>Hello World!</h1>
+     <p>My first web project</p>
+     
+     <script src="js/script.js"></script>
+   </body>
+   </html>
+   ```
+4. Open with Live Server and start coding!
+
+Now, with your development environment set up, you're ready to begin your web development journey! Follow our detailed roadmaps for HTML, CSS, and JavaScript to build your skills step by step.
+
 ## 🌟 Introduction
 
 Hey there, future developers! I'm Mahendra Mahara, a senior BCA student at Tribhuvan University. I've noticed many of my junior friends and new students want to start web development but feel lost about where to begin.
